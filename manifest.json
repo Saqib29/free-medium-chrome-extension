@@ -1,0 +1,26 @@
+{
+    "manifest_version": 3,
+    "name": "free medium",
+    "version": "1.0.0",
+    "description": "Read the premium medium articles.",
+    "permissions": ["tabs", "activeTab", "scripting", "notifications"],
+    "host_permissions": ["https://medium.com/*"],
+    "background": {
+        "service_worker": "scripts/service_worker.js"
+    },
+    "action": {
+        "default_icon": {
+        "16": "images/icon-16.png",
+        "32": "images/icon-32.png",
+        "48": "images/icon-64.png",
+        "128": "images/icon-128.png"
+        }
+    },
+    "icons": {
+        "16": "images/icon-16.png",
+        "32": "images/icon-32.png",
+        "48": "images/icon-64.png",
+        "128": "images/icon-128.png"
+    }
+}
+
