@@ -1,4 +1,4 @@
-browser.action.onClicked.addListener((tab) => {
+browser.browserAction.onClicked.addListener((tab) => {
     browser.tabs.query({ active: true, currentWindow: true }, (tabs) => {
         let currentTab = tabs[0];
         let url = currentTab.url;
@@ -10,7 +10,7 @@ browser.action.onClicked.addListener((tab) => {
         } else {
             browser.notifications.create({
                 type: 'basic',
-                iconUrl: '../images/icon-64.png',
+                iconUrl: '../images/icon-48.png',
                 title: 'Wrong site',
                 message: 'This extension only works on medium.com',
                 priority: 2
