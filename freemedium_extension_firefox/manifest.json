@@ -16,6 +16,11 @@
       "32": "images/icon-32.png",
       "48": "images/icon-64.png",
       "128": "images/icon-128.png"
-  }
+    },
+    "browser_specific_settings": {
+      "gecko": {
+        "id": "freemedium@mozilla.org"
+      }
+    }
  }
   
